@@ -8,7 +8,7 @@ export default function ProjectModal({ project, onClose }) {
     <div className="modal-overlay" onClick={onClose}>
       <div className="modal" onClick={(e) => e.stopPropagation()}>
         <button className="modal-close" onClick={onClose}>
-          <FiX />
+          <FiX size={24} />
         </button>
 
         <h3>{project.title}</h3>
@@ -17,9 +17,10 @@ export default function ProjectModal({ project, onClose }) {
           controls
           autoPlay
           loop
-          muted={false}
+          muted
           className="modal-video"
           src={project.video}
+          preload="metadata" // preload metadata to avoid full video download at start
         />
 
         <p className="modal-desc">{project.desc}</p>

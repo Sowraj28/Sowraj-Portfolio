@@ -1,6 +1,7 @@
 import React, { useState } from "react";
 import ProjectModal from "./ProjectModal";
 
+// Update video paths and remove spaces from filenames for Vercel compatibility
 const PROJECTS = [
   {
     id: 1,
@@ -14,7 +15,7 @@ const PROJECTS = [
     id: 2,
     title: "Local Lens – News Publish Website",
     img: "/images/project-2.png",
-    video: "/projects/blog vedio.mp4",
+    video: "/projects/blog-vedio.mp4", // filename updated, no spaces
     desc: "A news publishing platform where authenticated users can submit, edit, and manage articles. Designed with a clean UI and secure authentication, this project demonstrates user management, CRUD operations, and responsive web design for a smooth publishing experience.",
     github: "https://github.com/Sowraj28/LOCAL_LENS",
   },
