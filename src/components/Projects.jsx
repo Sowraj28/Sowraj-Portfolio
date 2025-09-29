@@ -1,13 +1,14 @@
 import React, { useState } from "react";
 import ProjectModal from "./ProjectModal";
 
-// Update video paths and remove spaces from filenames for Vercel compatibility
+// Update video paths: all three projects now use YouTube embed links
 const PROJECTS = [
   {
     id: 1,
     title: "Crystal Chart – Crypto Market Analyzer",
     img: "/images/project-1.png",
-    video: "/projects/crystalchat.mp4",
+    video: "https://www.youtube.com/embed/A_Rw3em7OJQ", // YouTube embed
+    isYoutube: true,
     desc: "A full-stack crypto market analysis platform that integrates live coin data, interactive charts, and price trends. Built using Python, Django REST Framework, and React, it includes an investment simulation module for practicing trading with virtual funds, helping beginners reduce risks and make data-driven decisions.",
     github: "https://github.com/Sowraj28/Crystal-Chart",
   },
@@ -15,7 +16,8 @@ const PROJECTS = [
     id: 2,
     title: "Local Lens – News Publish Website",
     img: "/images/project-2.png",
-    video: "/projects/blog-vedio.mp4", // filename updated, no spaces
+    video: "https://www.youtube.com/embed/zvl2w3KRnVo", // YouTube embed
+    isYoutube: true,
     desc: "A news publishing platform where authenticated users can submit, edit, and manage articles. Designed with a clean UI and secure authentication, this project demonstrates user management, CRUD operations, and responsive web design for a smooth publishing experience.",
     github: "https://github.com/Sowraj28/LOCAL_LENS",
   },
@@ -23,7 +25,8 @@ const PROJECTS = [
     id: 3,
     title: "Employee Manager – CRUD App",
     img: "/images/project-3.png",
-    video: "/projects/empmanager.mp4",
+    video: "https://www.youtube.com/embed/4eRMsgy0t9g", // YouTube embed
+    isYoutube: true,
     desc: "A responsive employee management web app that allows adding, updating, and deleting employee records. It includes search functionality, local storage persistence, and a simple yet professional UI for managing employee data efficiently.",
     github: "https://github.com/Sowraj28/employee-manager",
   },

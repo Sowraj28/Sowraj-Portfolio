@@ -13,15 +13,27 @@ export default function ProjectModal({ project, onClose }) {
 
         <h3>{project.title}</h3>
 
-        <video
-          controls
-          autoPlay
-          loop
-          muted
-          className="modal-video"
-          src={project.video}
-          preload="metadata" // preload metadata to avoid full video download at start
-        />
+        {project.isYoutube ? (
+          <iframe
+            width="100%"
+            height="360"
+            src={project.video}
+            title={project.title}
+            frameBorder="0"
+            allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture"
+            allowFullScreen
+          ></iframe>
+        ) : (
+          <video
+            controls
+            autoPlay
+            loop
+            muted
+            className="modal-video"
+            src={project.video}
+            preload="metadata"
+          />
+        )}
 
         <p className="modal-desc">{project.desc}</p>
 
