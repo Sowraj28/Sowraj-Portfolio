@@ -1,50 +1,39 @@
 import React from "react";
 
-const SKILLS = [
-  { name: "Python", value: 80 },
-  { name: "Django & Django REST Framework", value: 90 },
-  { name: "HTML", value: 80 },
-  { name: "CSS", value: 85 },
-  { name: "Bootstrap", value: 70 },
-  { name: "React", value: 50 },
+// Merged Tech Stack (skills + tools)
+const TECH_STACK = [
+  { name: "Python", icon: "/icons/python.png" },
+  { name: "Django", icon: "/icons/django.png" },
+  { name: "DRF", icon: "/icons/DjangoRestFramework1.png" },
+  { name: "HTML", icon: "/icons/html.png" },
+  { name: "CSS", icon: "/icons/css.png" },
+  { name: "Bootstrap", icon: "/icons/bootstrap.png" },
+  { name: "React", icon: "/icons/react.png" },
+  { name: "Canva", icon: "/icons/canva.png" },
+  { name: "Figma", icon: "/icons/figma2.png" },
+  { name: "Postman", icon: "/icons/postman1.png" },
+  { name: "GitHub", icon: "/icons/github.png" },
+  { name: "VS Code", icon: "/icons/vscode1.png" },
 ];
-
-const TOOLS = ["Canva", "Figma", "Postman", "Git & GitHub", "VS Code"];
 
 export default function Skills() {
   return (
-    <div className="skills container">
-      <h2>Skills & Tools</h2>
-      <div className="skills-grid">
-        {/* Left side - Technical Skills */}
-        <div className="skills-list">
-          <h3>Technical Skills</h3>
-          {SKILLS.map((s) => (
-            <div className="skill" key={s.name}>
-              <div className="skill-head">
-                <span>{s.name}</span>
-                <span>{s.value}%</span>
-              </div>
-              <div className="skill-bar">
-                <div
-                  className="skill-fill"
-                  style={{ width: `${s.value}%` }}
-                ></div>
-              </div>
-            </div>
-          ))}
+    <div className="skills section">
+      {/* Glass container */}
+      <div className="skills-container">
+        {/* Top-left heading inside container */}
+        <div className="skills-left-heading">
+          <h2>Skills</h2>
         </div>
 
-        {/* Right side - Tools */}
-        <div className="tools-section">
-          <h3>Tools</h3>
-          <div className="tools-grid">
-            {TOOLS.map((tool) => (
-              <span className="tool-badge" key={tool}>
-                {tool}
-              </span>
-            ))}
-          </div>
+        {/* Tech Stack grid */}
+        <div className="skills-grid">
+          {TECH_STACK.map((tech) => (
+            <div className="skill-icon" key={tech.name}>
+              <img src={tech.icon} alt={tech.name} />
+              <span className="skill-name">{tech.name}</span>
+            </div>
+          ))}
         </div>
       </div>
     </div>

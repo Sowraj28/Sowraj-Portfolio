@@ -1,0 +1,60 @@
+{
+  "v": "4.8.0",
+  "fr": 30,
+  "ip": 0,
+  "op": 210,
+  "w": 600,
+  "h": 150,
+  "nm": "SKILLS Animation",
+  "ddd": 0,
+  "assets": [],
+  "fonts": {
+    "list": [
+      {
+        "fName": "VisbyRoundCF-DemiBold",
+        "fFamily": "Visby Round CF",
+        "fStyle": "Demi Bold",
+        "ascent": 71.701
+      }
+    ]
+  },
+  "layers": [
+    {
+      "ddd": 0,
+      "ind": 1,
+      "ty": 5,
+      "nm": "SKILLS",
+      "ks": {
+        "o": { "a": 0, "k": 100 },
+        "r": { "a": 0, "k": 0 },
+        "p": { "a": 0, "k": [0, 0, 0] },
+        "a": { "a": 0, "k": [0, 0, 0] },
+        "s": { "a": 0, "k": [100, 100, 100] }
+      },
+      "t": {
+        "d": {
+          "k": [
+            {
+              "s": {
+                "s": 87,
+                "f": "VisbyRoundCF-DemiBold",
+                "t": "SKILLS",
+                "j": 0,
+                "tr": -10,
+                "lh": 104.4,
+                "ls": 0,
+                "fc": [0, 0, 0]
+              },
+              "t": 0
+            }
+          ]
+        }
+      },
+      "ip": 0,
+      "op": 210,
+      "st": 0,
+      "bm": 0
+    }
+  ],
+  "markers": []
+}
